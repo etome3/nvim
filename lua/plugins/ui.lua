@@ -28,14 +28,4 @@ return {
       },
     },
   },
-  keys = {
-    {
-      "<C-`>",
-      function()
-        Snacks.terminal(nil, nil)
-      end,
-      desc = "Toggle Terminal",
-      mode = { "n", "t" },
-    },
-  },
 }
