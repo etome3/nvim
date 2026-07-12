@@ -4,6 +4,8 @@
 local opt = vim.opt
 opt.relativenumber = false
 
+opt.shell = "fish"
+
 opt.shiftwidth = 4
 opt.tabstop = 4
 opt.softtabstop = 4
