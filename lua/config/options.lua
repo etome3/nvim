@@ -6,9 +6,9 @@ opt.relativenumber = false
 
 opt.shell = "fish"
 
-opt.shiftwidth = 4
-opt.tabstop = 4
-opt.softtabstop = 4
+-- opt.shiftwidth = 4
+-- opt.tabstop = 4
+-- opt.softtabstop = 4
 
 vim.g.lazyvim_python_lsp = "ty"
 
