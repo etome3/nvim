@@ -6,6 +6,8 @@ opt.relativenumber = false
 
 opt.shell = "fish"
 
+opt.mousescroll = "ver:1,hor:1"
+
 -- opt.shiftwidth = 4
 -- opt.tabstop = 4
 -- opt.softtabstop = 4
