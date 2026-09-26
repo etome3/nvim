@@ -2,29 +2,16 @@
 -- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
 -- Add any additional options here
 local opt = vim.opt
-opt.relativenumber = false
 
+opt.relativenumber = true
+opt.number = true
 opt.shell = "fish"
-
 opt.mousescroll = "ver:1,hor:1"
-
--- opt.shiftwidth = 4
--- opt.tabstop = 4
--- opt.softtabstop = 4
+opt.shiftwidth = 4
+opt.tabstop = 4
+opt.autoindent = true
+opt.expandtab = true
+opt.clipboard:append("unnamedplus")
+opt.updatetime = 50
 
 vim.g.lazyvim_python_lsp = "ty"
-
-vim.g.neovide_cursor_animation_length = 0
-vim.g.neovide_scroll_animation_length = 0.15
-
-vim.o.clipboard = "unnamedplus"
-
-vim.api.nvim_create_autocmd("FileType", {
-  pattern = { "c", "cpp" },
-  callback = function()
-    vim.opt_local.shiftwidth = 4
-    vim.opt_local.tabstop = 4
-    vim.opt_local.softtabstop = 4
-    vim.opt_local.expandtab = true
-  end,
-})
